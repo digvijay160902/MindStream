@@ -62,7 +62,7 @@ export default function Account() {
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Your Details</h2>
             <p className="text-gray-600">Email: {userInfo.email}</p>
             <p className="text-gray-600">Comments: {userInfo.Comments ? userInfo.Comments.length : 0}</p>
-            <p className="text-gray-600">Likes: {userInfo.likes ? userInfo.likes.length : 0}</p>
+            <p className="text-gray-600">Likes: {userInfo.likedPosts ? userInfo.likedPosts.length : 0}</p>
           </div>
           <div className="bg-white shadow-md rounded p-6">
             <h2 className="text-2xl font-bold text-gray-800 mb-4">Your Posts</h2>
