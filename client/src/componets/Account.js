@@ -12,6 +12,7 @@ export default function Account() {
 
   useEffect(() => {
     fetchUser();
+    // eslint-disable-next-line
   }, []);
 
   const handleLogout = () => {

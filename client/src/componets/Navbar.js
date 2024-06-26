@@ -9,7 +9,7 @@ import './Navabar.css';
 
 
 export default function Navbar() {
-    const { isLoggedIn, setIsLoggedIn } = useContext(AuthContext);
+    const { isLoggedIn } = useContext(AuthContext);
     const [isMenu, setIsMenu] = useState(false);
 
     const toggleMenu = () => {

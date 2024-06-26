@@ -1,4 +1,4 @@
-import { Link, useParams } from 'react-router-dom';
+import {  useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -14,13 +14,14 @@ function ViewPost() {
   const [post, setPost] = useState(null);
   const [liked, setLiked] = useState(false);
   const { isLoggedIn, user } = useContext(AuthContext);
-  const [likeButtonDisabled, setLikeButtonDisabled] = useState(false);
+  const [likeButtonDisabled] = useState(false);
   const [loader,setLoader] = useState(true);
   const [showModal, setShowModal] = useState(false);
   const [commentText, setCommentText] = useState('');
   
   useEffect(() => {
     fetchPost();
+    // eslint-disable-next-line
   }, []);
 
   const fetchPost = async () => {

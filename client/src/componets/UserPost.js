@@ -9,6 +9,7 @@ export default function UserPost(props) {
 
   useEffect(() => {
     showPost();
+    // eslint-disable-next-line
   }, []);
 
   const showPost = async () => {
